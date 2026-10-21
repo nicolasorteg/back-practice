@@ -9,7 +9,7 @@ public interface IFunkoRepository {
     Funko? GetByNombre(string nombre);
     
     Funko Add(Funko funko);
-    Funko? Update(long id, Funko funko);
+    Funko? Update(Funko funko);
     Funko? PatchPrice(long id, decimal precio);
     bool Delete(long id);
 }
