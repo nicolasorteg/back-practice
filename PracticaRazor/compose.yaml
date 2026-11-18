@@ -1,0 +1,7 @@
+﻿services:
+  practicarazor:
+    image: practicarazor
+    build:
+      context: .
+      dockerfile: PracticaRazor/Dockerfile
+
