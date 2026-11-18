@@ -1,0 +1,15 @@
+@page "/alumno/{edad:int?}"
+@model Alumno
+
+<div class="text-center">
+    <h1>Hola @Model.Nombre</h1>
+    @if (Model.Edad.HasValue) {
+        @if (Model.Edad >= 18) {
+            <p>Puedes votar crack</p>
+        } else {
+            <p>No puedes votar pequeñin</p>
+        }
+    } else {
+        <p>Si me dices tu edad te digo si puedes votar jefe.</p>
+    }
+</div>
