@@ -4,11 +4,16 @@
 <div class="text-center">
     <h1>Hola @Model.Nombre</h1>
     @if (Model.Edad.HasValue) {
-        @if (Model.Edad >= 18) {
-            <p>Puedes votar crack</p>
+        @if (Model.Edad >= 0 && Model.Edad <= 120) {
+            @if (Model.Edad >= 18) {
+                <p>Puedes votar crack</p>
+            } else {
+                <p>No puedes votar pequeñin</p>
+            }
         } else {
-            <p>No puedes votar pequeñin</p>
+            <p>Edad inválida caballero</p>
         }
+        
     } else {
         <p>Si me dices tu edad te digo si puedes votar jefe.</p>
     }
