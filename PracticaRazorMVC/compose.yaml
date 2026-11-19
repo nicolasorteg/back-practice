@@ -1,0 +1,7 @@
+﻿services:
+  practicarazormvc:
+    image: practicarazormvc
+    build:
+      context: .
+      dockerfile: PracticaRazorMVC/Dockerfile
+
